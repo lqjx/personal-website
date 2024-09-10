@@ -1,4 +1,23 @@
-<nav class="fixed flex justify-between items-center bg-transparent h-24 px-12 w-full">
+<script lang="ts">
+    import {onMount} from "svelte";
+
+    let scrolled: boolean = false;
+
+    const handleScroll = () => {
+        scrolled = window.scrollY > 0;
+    };
+
+    onMount(() => {
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        }
+    });
+</script>
+
+<nav class="fixed flex justify-between items-center px-12 w-full transition-all duration-300 ease-in-out z-50 border-transparent
+    {scrolled ? 'backdrop-blur-lg bg-black/40 border border-b-neutral-100/50 h-16' : 'bg-transparent h-24'}">
     <div class="flex items-center justify-between space-x-2">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />

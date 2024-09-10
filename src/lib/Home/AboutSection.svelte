@@ -1,6 +1,6 @@
 <section class="py-32 bg-neutral-50 text-neutral-950">
-    <div class="w-[1200px] max-w-[1200px] flex flex-col justify-center m-auto">
-        <h4 class="text-4xl">About Me</h4>
+    <div class="lg:w-[1200px] max-w-[1200px] flex flex-col justify-center m-auto p-4">
+        <h4 class="text-4xl mb-6">About Me</h4>
         <p class="text-lg">
             I go by the pseudonym "daydream". I've been into programming since I was a child, which was when I was about 10 years old.
             My brother introduced me to simple HTML and CSS. Just plain HTML and CSS. No JavaScript (Bad language btw), no other languages, nothing.<br><br>
