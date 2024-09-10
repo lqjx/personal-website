@@ -5,7 +5,7 @@
 </script>
 
 <section class="bg-gradient-to-bl from-violet-500 via-violet-400 to-violet-300 flex justify-center h-screen items-center">
-    <div>
+    <div class="w-[1200px] max-w-[1200px]">
         <div class="flex items-center grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
                 <h1 transition:fade class="text-7xl drop-shadow-md">Hi!<br>
