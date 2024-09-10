@@ -1,2 +1,10 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+    import {fade} from "svelte/transition";
+    import HeroSection from "$lib/Home/HeroSection.svelte";
+    import AboutSection from "$lib/Home/AboutSection.svelte";
+</script>
+
+<div transition:fade>
+    <HeroSection/>
+    <AboutSection/>
+</div>
