@@ -1,4 +1,4 @@
-<section class="py-32 bg-neutral-50 text-neutral-950">
+<section class="py-32 bg-neutral-50 text-neutral-950 absolute w-full">
     <div class="lg:w-[1200px] max-w-[1200px] flex flex-col justify-center m-auto p-4">
         <h4 class="text-4xl mb-6">About Me</h4>
         <p class="text-lg">
@@ -14,7 +14,7 @@
             and immensely improved my programming skills in various languages like:<br>
             <span class="font-bold">HTML, CSS, JS, SQL, C++ </span>and the basics of <span class="font-bold">ASM</span>.<br><br>
 
-            I learned about so many topics in the past and decided to stick to experimenting and working on various things in C++, Web Development.
+            I learned about so many topics in the past and decided to stick to experimenting and working on various things in C++ and Web Development.
             Occasionally, I reverse engineer malware and crack my favorite programs, for the purpose of studying them.
         </p>
     </div>

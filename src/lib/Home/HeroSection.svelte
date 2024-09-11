@@ -58,15 +58,15 @@
 </script>
 
 <section class="bg-gradient-to-bl from-violet-500 via-violet-400 to-violet-300 flex justify-center h-screen items-center">
+    <Particles
+            id="tsparticles"
+            class="absolute top-0 left-0 w-full h-full"
+            options="{particlesConfig}"
+            on:particlesLoaded="{onParticlesLoaded}"
+    />
     <div class="">
-        <Particles
-                id="tsparticles"
-                class="bg-fixed"
-                options="{particlesConfig}"
-                on:particlesLoaded="{onParticlesLoaded}"
-        />
         <div class="lg:w-[1200px] max-w-[1200px] p-4">
-            <div class="flex items-center grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="items-center grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div>
                     <h1 transition:fly={{ duration: 1000, y: -20 }} class="text-7xl drop-shadow-md">Hi!<br>
                         I'm daydream
