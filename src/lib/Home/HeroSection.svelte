@@ -60,10 +60,9 @@
 <section class="bg-gradient-to-bl from-violet-500 via-violet-400 to-violet-300 flex justify-center h-screen items-center">
     <Particles
             id="tsparticles"
-            class="absolute top-0 left-0 w-full h-full"
+            class="z-0"
             options="{particlesConfig}"
-            on:particlesLoaded="{onParticlesLoaded}"
-    />
+            on:particlesLoaded="{onParticlesLoaded}"/>
     <div class="">
         <div class="lg:w-[1200px] max-w-[1200px] p-4">
             <div class="items-center grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -71,7 +70,7 @@
                     <h1 transition:fly={{ duration: 1000, y: -20 }} class="text-7xl drop-shadow-md">Hi!<br>
                         I'm daydream
                     </h1>
-                    <p transition:fade={{ duration: 1000, delay: 500 }} class="mb-8 mt-4 text-lg">
+                    <p transition:fade={{ duration: 1000, delay: 500 }} class="mb-8 mt-4 text-lg drop-shadow-md">
                         Web Developer, C++ and Reverse Engineering enthusiast
                     </p>
                     <a href="#">
