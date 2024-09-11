@@ -1,7 +1,49 @@
 <script lang="ts">
-    import {fade, fly} from "svelte/transition";
+    import Particles, { particlesInit } from '@tsparticles/svelte';
+    import { loadFull } from "tsparticles";
 
+    import {fade, fly} from "svelte/transition";
     import Kawai from "$lib/assets/img/Kawaii2.jpg"
+
+    //let particlesUrl = 'http://foo.bar/particles.json'; // placeholder, replace it with a real url
+
+    let particlesConfig = {
+        particles: {
+            shape: {
+                type: "circle",
+            },
+            color: {
+                value: '#d4d4d4'
+            },
+            move: {
+                enable: true,
+                speed: 0.1,
+            },
+            number: {
+                value: 350
+            },
+            opacity: {
+                animation: {
+                    enable: true,
+                    speed: 1,
+                    sync: false,
+                },
+                value: { min: 0, max: 1 },
+            },
+            size: {
+                value: { max: 2.5, min: 1 },
+            },
+        },
+        preset: "stars",
+    };
+
+    let onParticlesLoaded = (event) => {
+        const particlesContainer = event.detail.particles;
+    };
+
+    void particlesInit(async (engine) => {
+        await loadFull(engine);
+    });
 
     function fadeFly(node, { delay = 0, duration = 400, y = -20 } = {}) {
         return {
@@ -16,8 +58,13 @@
 </script>
 
 <section class="bg-gradient-to-bl from-violet-500 via-violet-400 to-violet-300 flex justify-center h-screen items-center">
-    <div class="galaxy absolute"></div>
     <div class="">
+        <Particles
+                id="tsparticles"
+                class="bg-fixed"
+                options="{particlesConfig}"
+                on:particlesLoaded="{onParticlesLoaded}"
+        />
         <div class="lg:w-[1200px] max-w-[1200px] p-4">
             <div class="flex items-center grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div>
