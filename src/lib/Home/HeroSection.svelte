@@ -67,10 +67,10 @@
         <div class="lg:w-[1200px] max-w-[1200px] p-4">
             <div class="items-center grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div>
-                    <h1 transition:fly={{ duration: 1000, y: -20 }} class="text-7xl drop-shadow-md">Hi!<br>
+                    <h1 transition:fly={{ duration: 1000, y: -20 }} class="text-7xl drop-shadow-md flex text-center md:text-left">Hi!<br>
                         I'm daydream
                     </h1>
-                    <p transition:fade={{ duration: 1000, delay: 500 }} class="mb-8 mt-4 text-lg drop-shadow-md">
+                    <p transition:fade={{ duration: 1000, delay: 500 }} class="mb-8 mt-4 text-lg drop-shadow-md flex text-center md:text-left">
                         Web Developer, C++ and Reverse Engineering enthusiast
                     </p>
                     <a href="#">
@@ -86,7 +86,7 @@
                         </button>
                     </a>
                 </div>
-                <img transition:fadeFly={{ y: -20, duration: 1000 }} src={Kawai} class="flex m-auto w-96 border-2 border-neutral-100 rounded-3xl drop-shadow-xl"  alt="profile-pic"/>
+                <img transition:fadeFly={{ y: -20, duration: 1000 }} src={Kawai} class="flex m-auto border-2 border-neutral-100 rounded-3xl drop-shadow-xl w-0 md:w-96 invisible md:visible"  alt="profile-pic"/>
             </div>
             <div class="custom-shape-divider-bottom-1725985162">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" class="relative bottom-0">
