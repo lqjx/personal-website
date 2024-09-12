@@ -6,7 +6,5 @@
 </script>
 
 <div transition:fade class="bg-black text-neutral-50 font-jetbrains">
-    <Navbar/>
     <slot />
-    <Footer/>
 </div>

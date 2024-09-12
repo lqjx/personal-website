@@ -1,4 +1,4 @@
-<section class="py-32 bg-neutral-50 text-neutral-950 w-full relative">
+<section id="about" class="py-32 bg-neutral-50 text-neutral-950 w-full relative">
     <div class="lg:w-[1200px] max-w-[1200px] flex flex-col justify-center m-auto p-4">
         <h4 class="text-4xl font-bold mb-6">About Me</h4>
         <p class="text-lg">

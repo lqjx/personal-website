@@ -57,7 +57,7 @@
     }
 </script>
 
-<section class="bg-gradient-to-bl from-violet-500 via-violet-400 to-violet-300 flex justify-center h-screen items-center">
+<section id="hero" class="bg-gradient-to-bl from-violet-500 via-violet-400 to-violet-300 flex justify-center h-screen items-center">
     <Particles
             id="tsparticles"
             class="z-0"
